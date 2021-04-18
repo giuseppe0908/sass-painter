@@ -1,0 +1,91 @@
+main {
+ background-color: $bg-color-main;
+  & .container{
+      & > p{
+        text-align: center;
+        font-size: $font-size;
+        padding-top: 40px;
+      }
+      & .contenitore{
+        display: flex;
+      }
+      & .card{
+        @include my-flex-column;
+        height: 300px;
+        &.speciale{
+          margin: 0 20px;
+        }
+        &.col-4{
+          width: calc(100% /12 *4 - 14px);
+        }
+        & img{
+          width: 100%;
+          height: 150px;
+        }
+        & .descrizione{
+          background-color: white;
+          height: 150px;
+          padding-left: 15px;
+          padding-top: 15px;
+          & .bold{
+            // font-style: bold;
+            font-weight: bold;
+          }
+          & p.p{
+            color: $color-nav-contact;
+          }
+          & a{
+            text-decoration: none;
+            color: #8DCEFF;
+          }
+        }
+      }
+      & .raccolta{
+        margin-top: 55px;
+
+        & > .card-1{
+          height: 300px;
+          & .text{
+            margin-top: 50px;
+            margin-left: 45px;
+            & p{
+              color: $color-nav-list;
+              margin-top: 20px;
+              font-size: 18px;
+              width: 400px;
+              // margin-bottom: 20px;
+              &.title{
+              // font-weight: bold;
+              font-size: $font-size;
+              }
+            }
+          }
+          & img{
+            width: 100%;
+            height: 100%;
+          }
+          & > img#image{
+            width: 400px;
+            height: 250px;
+            margin: 10px 10px;
+          }
+          &.bg-img{
+            background-position: center;
+            background-size: 100%;
+          }
+          &.bg-purple{
+            background-color: #3C1567;
+          }
+          &.bg-gray{
+            background-color: #3C3C3C;
+          }
+          &.bg-blue{
+            background-color: #0072BB;
+          }
+        }
+      }
+    // & .information ul{
+    //   display: inline-block;
+    // }
+  }
+}

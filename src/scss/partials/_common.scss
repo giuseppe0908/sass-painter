@@ -1,0 +1,39 @@
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+ul{
+  list-style: none;
+  & > li{
+    // margin: 0px 10px;
+    margin-right: 20px;
+  }
+}
+.mg-top{
+  margin-top: 20px;
+}
+.mg-bottom{
+  margin-bottom: 20px;
+}
+.btn{
+  padding: 8px 15px;
+  border: 1px solid black;
+}
+
+[class*="col-"]{
+  float: left;
+}
+/*--- CLEARFIX ---*/
+
+.container:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.col-4{
+  width: calc(100% /12 *4 );
+}
+.col-6{
+  width: 50%;
+  /* width: calc(100% /12 *6); */
+}

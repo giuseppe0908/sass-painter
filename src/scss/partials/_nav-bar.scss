@@ -1,0 +1,38 @@
+nav{
+  background-color: black;
+  height: 80px;
+  & .nav-bar-contact{
+    @include my-flex-end;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    & > ul{
+      display: flex;
+      & > li{
+        color: $color-nav-contact;
+        & > i{
+          margin-right: 5px;
+          color: $color-icon;
+        }
+      }
+    }
+  }
+  & .nav-bar-list{
+    & > ul{
+      display: flex;
+      align-items: center;
+      & > li{
+        color: $color-nav-list;
+        display:flex;
+        align-items: flex-end; //per centrare i curet-down
+        padding-right: 10px;
+        & > img.logo-nav{
+          width: 80px;
+        }
+        & > i{
+          margin-left: 5px;
+          color: $color-nav-contact;
+        }
+      }
+    }
+  }
+}
