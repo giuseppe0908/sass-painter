@@ -1,4 +1,5 @@
 footer{
+  font-size: $nav-font-size;
   & .information{
     display: flex;
     margin-top: 40px;
@@ -62,6 +63,9 @@ footer{
       &  ul{
       display: flex;
       }
+    }
+    & .bho{
+      @include my-flex-end;
     }
     & .flex-end{
       @include my-flex-end;

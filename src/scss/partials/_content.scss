@@ -45,6 +45,9 @@ main {
 
         & > .card-1{
           height: 300px;
+          &.bg-img{
+            background-image: url("./img/wacom-painter.jpg");
+          }
           & .text{
             margin-top: 50px;
             margin-left: 45px;
@@ -52,7 +55,7 @@ main {
               color: $color-nav-list;
               margin-top: 20px;
               font-size: 18px;
-              width: 400px;
+              // width: 400px;
               // margin-bottom: 20px;
               &.title{
               // font-weight: bold;

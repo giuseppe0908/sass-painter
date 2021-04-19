@@ -50,9 +50,11 @@ ul > li {
 }
 
 header .jumbo {
+  background-image: url("./img/bg-painter-home.jpg");
   background-position: center;
   background-size: 100%;
   height: 400px;
+  background-repeat: no-repeat;
 }
 header .jumbo .container .jumbo-text {
   padding-top: 80px;
@@ -82,6 +84,7 @@ header .jumbo .container .jumbo-text .button .btn#download {
 nav {
   background-color: black;
   height: 80px;
+  font-size: 11px;
 }
 nav .nav-bar-contact {
   display: flex;
@@ -98,6 +101,9 @@ nav .nav-bar-contact > ul > li {
 nav .nav-bar-contact > ul > li > i {
   margin-right: 5px;
   color: #0E6FD2;
+}
+nav .nav-bar-contact > ul > li select {
+  font-size: 11px;
 }
 nav .nav-bar-list > ul {
   display: flex;
@@ -166,6 +172,9 @@ main .container .raccolta {
 main .container .raccolta > .card-1 {
   height: 300px;
 }
+main .container .raccolta > .card-1.bg-img {
+  background-image: url("./img/wacom-painter.jpg");
+}
 main .container .raccolta > .card-1 .text {
   margin-top: 50px;
   margin-left: 45px;
@@ -174,7 +183,6 @@ main .container .raccolta > .card-1 .text p {
   color: white;
   margin-top: 20px;
   font-size: 18px;
-  width: 400px;
 }
 main .container .raccolta > .card-1 .text p.title {
   font-size: 30px;
@@ -202,6 +210,9 @@ main .container .raccolta > .card-1.bg-blue {
   background-color: #0072BB;
 }
 
+footer {
+  font-size: 11px;
+}
 footer .information {
   display: flex;
   margin-top: 40px;
@@ -263,6 +274,10 @@ footer .footer .loghi {
 }
 footer .footer .loghi ul {
   display: flex;
+}
+footer .footer .bho {
+  display: flex;
+  justify-content: flex-end;
 }
 footer .footer .flex-end {
   display: flex;
