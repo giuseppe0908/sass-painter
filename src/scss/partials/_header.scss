@@ -2,7 +2,7 @@ header{
   & .jumbo{
     background-image: url("./img/bg-painter-home.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     height: 400px;
     background-repeat: no-repeat;
     & .container .jumbo-text{
@@ -16,16 +16,17 @@ header{
       }
       & .offers p{
         color: $color-offers;
+        font-style: italic;
       }
       & .button .btn{
         margin-right: 15px;
-        &#more{
+        &.more{
           background-color: black;
           color: $color-nav-list;
         }
         &#download{
           background-color: #EBD79E;
-          padding: 6px 20px;
+          padding: 8px 20px;
         }
       }
     }

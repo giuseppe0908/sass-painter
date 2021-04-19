@@ -1,0 +1,31 @@
+
+@media screen and (max-width: 1000px){
+  .container{
+    width: 100%;
+    margin-left: 5px;
+  }
+  .contenitore{
+    display: flex;
+    flex-direction: column;
+  }
+  .w-35{
+    width: calc(100%/1);
+    padding: 40px 0px;
+  }
+  // .descrizione{
+  //
+  // }
+  .speciale{
+    margin: 0px 0px;
+  }
+  .card-1{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px){
+
+  nav{
+    display: none;
+  }
+
+}

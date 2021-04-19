@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title></title>
@@ -17,7 +19,7 @@
             <li><i class="fas fa-user"></i>Sign in</li>
             <li><i class="fas fa-shopping-cart"></i>Cart</li>
             <li>
-            <select class="" name="">
+            <select>
               <option value="">English</option>
             </select>
             </li>
@@ -48,11 +50,11 @@
             </span>
             <p class="mg-top">The most realistic paiting esperience you'll find hard to resist</p>
             <div class="offers mg-top">
-              <p>Limiteed-time offer</p>
+              <p> <b>Limiteed-time offer </b></p>
               <p>Get Signature Style Brush Pack Bundle FREE (worth $179.99)</p>
             </div>
             <div class="button mg-top">
-              <button id="more"  class="btn" type="button" name="button">LEARN MORE</button>
+              <button  class="btn more" type="button" name="button">LEARN MORE</button>
               <button id="download" class="btn" type="button" name="button">DOWNLOAD TRIAL</button>
             </div>
 
@@ -65,7 +67,8 @@
     <div class="container">
       <p class="mg-bottom">More paiting possibilities</p>
       <div class="contenitore mg-bottom">
-        <div class="card col-4">
+
+        <div class="card w-35">
           <img src="./assets/img/ptr-module.jpg" alt="">
           <div class="descrizione">
             <p class="mg-bottom bold"><a href="#">NEW</a> Painter Essentials 8</p>
@@ -73,7 +76,7 @@
             <a href="#">Learn more</a>
           </div>
         </div>
-        <div class="card col-4 speciale">
+        <div class="card w-35 speciale">
           <img src="./assets/img/particleshop-module.jpg" alt="">
           <div class="descrizione">
             <p class="mg-bottom bold">ParticleShop</p>
@@ -81,7 +84,7 @@
             <a href="#">Learn more</a>
           </div>
         </div>
-        <div class="card col-4">
+        <div class="card w-35">
           <img src="./assets/img/brush-pack-module.jpg" alt="">
           <div class="descrizione">
             <p class="mg-bottom bold">Brush Packs</p>
@@ -89,36 +92,39 @@
             <a href="#">Learn more</a>
           </div>
         </div>
+
       </div>
 
       <section class="raccolta mg-bottom">
-        <div class="card-1 col-6 bg-purple">
+
+        <div class="card-1  bg-purple">
           <div class="text">
             <p class="title">Wacom + Painter 2021</p>
             <p>Satisfy all digital Painting needs with the power and precision of these award-winning bundles.</p>
-            <button id="more"  class="btn mg-top" type="button" name="button">LEARN MORE</button>
+            <button class="btn mg-top more" type="button" name="button">LEARN MORE</button>
           </div>
         </div>
 
-        <div class="card-1 col-6 bg-img" ><img id="image" src="./assets/img/wacom.png" alt=""></div>
-        <div class="card-1 col-6"> <img src="./assets/img/painter-master.jpg" alt=""></div>
-        <div class="card-1 col-6 bg-gray">
+        <div class="card-1 bg-img" ><img id="image" src="./assets/img/wacom.png" alt=""></div>
+
+        <div class="card-1 "> <img src="./assets/img/painter-master.jpg" alt=""></div>
+        <div class="card-1  bg-gray">
           <div class="text">
             <p class="title">Painter Master</p>
             <p>Gain ispiration knowledge from professional artists whi have mastered Painter, and excel in their craft.</p>
-            <button id="more"  class="btn mg-top" type="button" name="button">LEARN MORE</button>
+            <button class="btn mg-top more" type="button" name="button">LEARN MORE</button>
           </div>
         </div>
 
-        <div class="card-1 col-6 bg-blue">
+        <div class="card-1  bg-blue">
           <div class="text">
             <p class="title">Busines & Education </p>
             <p>Save money on our award-winning painting software thanks to affordable and flexible licensing options.</p>
-            <button id="more"  class="btn mg-top" type="button" name="button">LEARN MORE</button>
+            <button class="btn mg-top more" type="button" name="button">LEARN MORE</button>
           </div>
         </div>
-        <div class="card-1 col-6"><img src="./assets/img/business-education.jpg" alt=""></div>
-
+        <div class="card-1"><img src="./assets/img/business-education.jpg" alt=""></div>
+        <!-- </div> -->
       </section>
     </div>
     </main>
@@ -180,24 +186,24 @@
 
      <section class="footer">
        <div class="loghi container">
-         <ul>
-           <li><img src="./assets/img/corelAdvantage.png" alt=""></li>
-           <li> <img src="./assets/img/logo-bbb.png" alt=""></li>
-           <li><img src="./assets/img/101.png" alt=""></li>
-         </ul>
-         <div class="bho">
-         <div class="flex-end">
-           <ul>
+           <ul class="left">
+             <li><img src="./assets/img/corelAdvantage.png" alt=""></li>
+             <li> <img src="./assets/img/logo-bbb.png" alt=""></li>
+             <li><img src="./assets/img/101.png" alt=""></li>
+           </ul>
+
+           <ul class="right">
              <li>Terms of Use</li>
              <li>Privacy</li>
              <li>Cookies</li>
              <li>Copyright &#169; 2021 Corel Corporation. All rights reserved.</li>
            </ul>
-         </div>
-         </div>
+
+
 
        </div>
      </section>
+
 
     </footer>
   </body>

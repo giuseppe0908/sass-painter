@@ -60,22 +60,22 @@ footer{
     & .loghi{
       display: flex;
       align-items: center;
+      justify-content: space-between;
       &  ul{
       display: flex;
+      justify-content: space-between;
       }
+
+
+      // @include my-flex-end;
+    & ul li{
+     color: $color-nav-contact;
+     margin-left: 19px;
+     &:last-child{
+     color: $color-nav-list;
+     }
     }
-    & .bho{
-      @include my-flex-end;
     }
-    & .flex-end{
-      @include my-flex-end;
-      & ul li{
-        color: $color-nav-contact;
-        margin-left: 19px;
-        &:last-child{
-        color: $color-nav-list;
-        }
-      }
-    }
+
   }
 }
