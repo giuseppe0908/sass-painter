@@ -1,6 +1,7 @@
 nav{
   background-color: black;
   height: 80px;
+
   font-size: $nav-font-size;
   & .nav-bar-contact{
     @include my-flex-end;
@@ -20,14 +21,7 @@ nav{
       }
     }
   }
-  #magico{
-     display: none;
-     background-color: black;
-     & ul li{
-       color: white;
-       border-bottom: 1px solid gray;
-     }
-  }
+
 
   & .nav-bar-list{
     display: flex;

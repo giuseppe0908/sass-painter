@@ -24,7 +24,19 @@ ul{
   width: calc(100%/3);
 }
 
-
+#magico{
+   display: none;
+   background-color: black;
+   position: absolute;
+   top: 80px;
+   width: 100%;
+   padding-left: 18px;
+   & ul li{
+     color: white;
+     padding-bottom: 10px;
+     border-bottom: 1px solid gray;
+   }
+}
 
 // [class*="col-"]{
 //   float: left;

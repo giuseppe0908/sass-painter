@@ -37,8 +37,22 @@ ul > li {
   width: calc(100%/3);
 }
 
+#magico {
+  display: none;
+  background-color: black;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  padding-left: 18px;
+}
+#magico ul li {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
 header .jumbo {
-  background-image: url("./img/bg-painter-home.jpg");
+  background-image: url("../img/bg-painter-home.jpg");
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -93,14 +107,6 @@ nav .nav-bar-contact > ul > li > i {
 }
 nav .nav-bar-contact > ul > li select {
   font-size: 11px;
-}
-nav #magico {
-  display: none;
-  background-color: black;
-}
-nav #magico ul li {
-  color: white;
-  border-bottom: 1px solid gray;
 }
 nav .nav-bar-list {
   display: flex;
@@ -171,7 +177,7 @@ main .container .raccolta > .card-1 {
   height: 300px;
 }
 main .container .raccolta > .card-1.bg-img {
-  background-image: url("./img/wacom-painter.jpg");
+  background-image: url("../img/wacom-painter.jpg");
 }
 main .container .raccolta > .card-1 .text {
   margin-top: 50px;
@@ -291,6 +297,14 @@ footer .footer .loghi ul li:last-child {
   .container {
     width: 100%;
   }
+
+  .nav-bar-list img {
+    margin-left: 20px;
+  }
+
+  .jumbo .jumbo-text {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contenitore {
@@ -317,9 +331,13 @@ footer .footer .loghi ul li:last-child {
     margin-left: 20px;
   }
 
+  #magico #color-icons li i {
+    color: #0E6FD2;
+  }
+
   .w-35 {
-    width: calc(100%/1);
-    padding: 25px 0px;
+    width: calc(100%/1 - 5px);
+    padding: 25px 5px;
   }
 
   main .container .card.speciale {
@@ -331,8 +349,37 @@ footer .footer .loghi ul li:last-child {
     flex-direction: column;
   }
 
+  main .container .raccolta {
+    margin-top: 0px;
+  }
+
   main .container .raccolta > .card-1 {
     width: 100%;
     margin-left: 0;
+  }
+
+  footer .information {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  footer .information ul {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
+  footer .icon-flex-end {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+
+  footer .footer .loghi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 }
