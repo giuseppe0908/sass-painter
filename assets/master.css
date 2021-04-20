@@ -274,7 +274,13 @@ footer .footer .loghi ul li:last-child {
     width: 100%;
     margin-left: 5px;
   }
-
+}
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .contenitore {
     display: flex;
     flex-direction: column;
@@ -291,10 +297,5 @@ footer .footer .loghi ul li:last-child {
 
   .card-1 {
     width: 100%;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav {
-    display: none;
   }
 }
