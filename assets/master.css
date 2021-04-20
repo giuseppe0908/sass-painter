@@ -94,6 +94,18 @@ nav .nav-bar-contact > ul > li > i {
 nav .nav-bar-contact > ul > li select {
   font-size: 11px;
 }
+nav .nav-magica {
+  display: none;
+  background-color: black;
+}
+nav .nav-magica ul li {
+  color: white;
+  border-bottom: 1px solid gray;
+}
+nav .nav-bar-list {
+  display: flex;
+  align-items: center;
+}
 nav .nav-bar-list > ul {
   display: flex;
   align-items: center;
@@ -110,6 +122,10 @@ nav .nav-bar-list > ul > li > img.logo-nav {
 nav .nav-bar-list > ul > li > i {
   margin-left: 5px;
   color: gray;
+}
+nav .nav-bar-list .fa-bars {
+  display: none;
+  color: white;
 }
 
 main {
@@ -176,13 +192,15 @@ main .container .raccolta > .card-1 img {
 }
 main .container .raccolta > .card-1 > img#image {
   width: 80%;
-  height: auto;
-  margin: 10px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 main .container .raccolta > .card-1.bg-img {
   background-position: center;
   background-size: 100%;
   background-size: cover;
+  position: relative;
 }
 main .container .raccolta > .card-1.bg-purple {
   background-color: #3C1567;
@@ -272,12 +290,6 @@ footer .footer .loghi ul li:last-child {
 @media screen and (max-width: 1000px) {
   .container {
     width: 100%;
-    margin-left: 5px;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav {
-    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -286,16 +298,41 @@ footer .footer .loghi ul li:last-child {
     flex-direction: column;
   }
 
+  nav ul li {
+    display: none;
+  }
+
+  nav .nav-bar-list > ul {
+    display: none;
+  }
+
+  nav .nav-bar-list .logo-nav {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav .nav-bar-list .fa-bars {
+    display: block;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
   .w-35 {
     width: calc(100%/1);
-    padding: 40px 0px;
+    padding: 25px 0px;
   }
 
-  .speciale {
-    margin: 0px 0px;
+  main .container .card.speciale {
+    margin: 0 0px;
   }
 
-  .card-1 {
+  .raccolta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .container .raccolta > .card-1 {
     width: 100%;
+    margin-left: 0;
   }
 }

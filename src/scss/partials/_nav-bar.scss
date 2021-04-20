@@ -20,7 +20,18 @@ nav{
       }
     }
   }
+ .nav-magica{
+    display: none;
+    background-color: black;
+    & ul li{
+      color: white;
+      border-bottom: 1px solid gray;
+    }
+  }
+
   & .nav-bar-list{
+    display: flex;
+    align-items: center;
     & > ul{
       display: flex;
       align-items: center;
@@ -37,6 +48,10 @@ nav{
           color: $color-nav-contact;
         }
       }
+    }
+    .fa-bars{
+      display: none;
+      color: white;
     }
   }
 }

@@ -76,13 +76,17 @@ main {
             // width: 400px;
             width: 80%;
             // height: 250px;
-            height: auto;
-            margin: 10px 10px;
+            // height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            // margin: 10px 10px;
           }
           &.bg-img{
             background-position: center;
             background-size: 100%;
             background-size: cover;
+            position: relative;
           }
           &.bg-purple{
             background-color: #3C1567;
