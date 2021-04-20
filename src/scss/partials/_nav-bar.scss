@@ -20,13 +20,13 @@ nav{
       }
     }
   }
- .nav-magica{
-    display: none;
-    background-color: black;
-    & ul li{
-      color: white;
-      border-bottom: 1px solid gray;
-    }
+  #magico{
+     display: none;
+     background-color: black;
+     & ul li{
+       color: white;
+       border-bottom: 1px solid gray;
+     }
   }
 
   & .nav-bar-list{

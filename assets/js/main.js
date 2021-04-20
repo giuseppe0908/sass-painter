@@ -22,9 +22,10 @@ document.getElementById('menu').addEventListener('click', function () {
 
   if (cliccato.style.display === "block") {
     cliccato.style.display = "none";
-    console.log("bho");
+    console.log("none");
   } else {
     cliccato.style.display = "block";
+    console.log("block");
   }
 });
 

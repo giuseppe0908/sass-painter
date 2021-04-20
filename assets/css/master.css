@@ -94,11 +94,11 @@ nav .nav-bar-contact > ul > li > i {
 nav .nav-bar-contact > ul > li select {
   font-size: 11px;
 }
-nav .nav-magica {
+nav #magico {
   display: none;
   background-color: black;
 }
-nav .nav-magica ul li {
+nav #magico ul li {
   color: white;
   border-bottom: 1px solid gray;
 }
